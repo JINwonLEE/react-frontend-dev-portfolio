@@ -1,0 +1,243 @@
+{
+    "basic_info": {
+      "description_header": "안녕하세요",
+      "description": "👋 저는 모든 일들을 조금 더 편하고 쉽게 만들고 싶은 개발자 이진원 입니다. 현재는 플랫폼, 인프라 개발자로 일하고 있으며 특히 k8s와 같은 클라우드 플랫폼에 연관된 일을 하고 있습니다. 저는 플랫폼에 관심이 많을 뿐만 아니라 Go, Python, C++ 등 다양한 언어에도 관심이 많은 편입니다. 그래서 경험을 해본 언어들이 많습니다. 이러한 경험을 토대로 시스템을 만들어서 사람들이 제가 만든 시스템으로 좀 더 편하게 일을 했으면 좋겠습니다. :)",
+      "section_name": {
+        "about": "About me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience",
+        "publications": "Publication"
+      }
+    },
+    "projects": [
+      {
+        "title": "One Click Kubernetes Creation",
+        "startDate": "2023",
+        "description": "요약 : 사내 Platform(OpenStack 기반의 VM orchestration platform) 위에서 정해진 template에 필요한 값 (ex. Ip address, CIDR)을 받아서 kubernetes cluster가 구성되는 tool을 만들었습니다.\n결과 : 별도의 추가 구성 없이 일부 필요한 값만 받아서 kubernetes cluster을 구성하였습니다. (Storage: Cephfs, CNI: calico)\n역할 및 구현 :\n\t- Kubernetes data plane, control plane image 구성\n\t- Kubernetes CNI, Storage 설정 (Linux)",
+        "images": [
+          "images/portfolio/one-click/one-click-1.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-kubernetes-plain",
+            "name": "Kubernetes"
+          },
+          {
+            "class": "devicon-linux-plain",
+            "name": "Linux"
+          },
+          {
+            "class": "devicon-bash-plain",
+            "name": "Bash"
+          }
+        ]
+      },
+      {
+        "title": "Vista Operator",
+        "startDate": "2023",
+        "description": "요약 : Kubernetes에서 helm을 통해서 배포되었던 제품(VISTA)을 VISTA라는 CRD와 해당 CRD을 지켜보는 operator을 통해서 배포 및 운영하였습니다.\n결과 : 복잡한 helm으로 배포하는 것보다 훨씬 더 간단하게 VISTA을 배포할 수 있었습니다. 또한 좀 더 application을 저희가 원하는대로 배포 및 관리할 수 있었습니다. (ex. module의 dependency, life-cycle, recover and etc)\n역할 및 구현 :\n\t- VISTA CRD 설계 (Golang)\n\t- VISTA Operator 구조 설계 (Golang)\n\t- VISTA Operator 구현 (Golang, Operator SDK)",
+        "images": [
+          "images/portfolio/vista-operator/vista-operator-1.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-kubernetes-plain",
+            "name": "Kubernetes"
+          },
+          {
+            "class": "devicon-go-plain",
+            "name": "Go"
+          }
+        ]
+      },
+      {
+        "title": "CI/CD",
+        "startDate": "2022",
+        "description": "요약 : 사내 구축되어 있는 Platform(OpenStack 기반의 VM orchestration tool) 위에 VM image 빌드(CI) 및 배포(CD)를 자동화하였습니다.\n결과 : 이미지 빌드 과정과 배포과정 모두 module화를 진행해서 CI/CD 과정을 모두 효율적으로 사용할 수 있었습니다. 주기적으로 CI/CD을 진행할 수 있었고 필요에 따라 CI 또는 CD 과정을 각각 진행할 수 있었습니다.\n역할 및 구현 :\n\t- Expect Script을 사용해 배포(CD) 과정 자동화 (Bash)",
+        "images": [
+          "images/portfolio/cicd/cicd-1.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-bash-plain",
+            "name": "Bash"
+          },
+          {
+            "class": "devicon-linux-plain",
+            "name": "Linux"
+          }
+        ]
+      },
+      {
+        "title": "Data Mirroring",
+        "startDate": "2021",
+        "description": "요약 : 제한된 리소스에서 최대 초당 120,000packets들을 다른 target server로 실시간 mirroring하는 tool을 개발하였습니다.\n결과 : 특정 사업자에 할당된 지역에 해당 tool이 배포되었고 현재 운영중에 있습니다. \n역할 및 구현 :\n\t- Mirroring model 설계 및 구현 \n\t- Data Mirroring tool에 대한 life cycle 관리\n\t- Data Mirroring module의 특성에 따른 시스템 설정",
+        "images": [
+          "images/portfolio/mirroring/mirroring-1.jpg"
+        ],
+        "url": "https://github.com/session-replay-tools/tcpcopy",
+        "technologies": [
+          {
+            "class": "devicon-c-plain",
+            "name": "C"
+          },
+          {
+            "class": "devicon-linux-plain",
+            "name": "Linux"
+          }
+        ]
+      },
+
+      {
+        "title": "VNFD validator, generator",
+        "startDate": "2021",
+        "description": "요약 : VNFD (Virtualize Network Function Descriptior) format을 검정하는 validation tool과 꼭 필요한 값들만 받아서 VNFD을 generation하는 tool을 개발하였습니다.\n결과 : 사용자는 validation tool을 통해 VNFD을 검정하고 human error을 손쉽게 찾을 수 있었습니다. Generation tool이 생기고 사용자는 excel을 통해 필요한 값(ex. ip, cidr, userdata and etc)을 넣고 VNFD을 error 없이 생성할 수 있었습니다.\n역할 및 구현 :\n\t- Validation process (ex. YAML validation, XML validation, custom validation, and etc) 구현 (Python)\n\t- Generation tool UI 구현 (Python)\n\t- Generation model 구현 (Python)",
+        "images": [
+          "images/portfolio/vnfd/vnfd-1.jpg",
+          "images/portfolio/vnfd/vnfd-2.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-python-plain",
+            "name": "Python"
+          },
+          {
+            "class": "devicon-bash-plain",
+            "name": "Bash"
+          }
+        ]
+      },
+      {
+        "title": "AI Assistant",
+        "startDate": "2019",
+        "description": "요약 : TMaxOS에 AI assistant을 만들어서 사용자가 원하는 기능을 수행할 수 있게 만들었습니다.\n결과 : 사용자는 음성으로 특정 명령을 AI assistant에게 요청하면 해당 기능을 수행하고 결과를 사용자에게 알려줍니다.\n역할 및 구현 :\n\t- AI assistant의 UI 구현 (C++, 사내 framework 이용)\n\t- AI assistant model 설계 및 구현 (C++, Event Driven)",
+        "images": [
+          "images/portfolio/ai-assistant/ai-assistant-1.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-cplusplus-plain",
+            "name": "C++"
+          },
+          {
+            "class": "devicon-linux-plain",
+            "name": "Linux"
+          }
+        ]
+      },
+      {
+        "title": "Convergence Aware CNN Training",
+        "startDate": "2018",
+        "description": "요약 : 분산 CNN Training에서 weight의 convergence을 활용하여 performance을 최대한 유지하면서 training 속도, intermediate memory 효율성을 증가시켰습니다.\n결과 : 훈련 과정에서 가장 큰 비중을 차지하는 back propagation process을 최대 1.5배 가까이 빨라지는 결과를 볼 수 있었습니다. (Image Classification Model)\n역할 및 구현 :\n\t- Custom Matmul Operation 구현 (CUDA, C++, Python)\n\t- Convergence store 데이터 구조 구현 (C++)\n\t- Convergence check process 구현 (C++)",
+        "images": [
+          "images/portfolio/cnn/cnn-1.jpg"
+        ],
+        "url": "https://unist.dcollection.net/srch/srchDetail/200000178272",
+        "technologies": [
+          {
+            "class": "devicon-cplusplus-plain",
+            "name": "C++"
+          },
+          {
+            "class": "devicon-linux-plain",
+            "name": "Linux"
+          },
+          {
+            "class": "devicon-tensorflow-original",
+            "name": "Tensorflow"
+          }
+        ]
+      },
+      {
+        "title": "CNN Distributed Training",
+        "startDate": "2018",
+        "description": "요약 : 분산 CNN Training에서 CNN의 특성을 이용해서 model의 layer을 적절하게 분산시켜서 network bottleneck을 줄이고 종합적으로 training performance을 향상시켰습니다.\n결과 : 여러 CNN model을 대상으로 적절한 model parallelism을 찾아내고 다양한 환경에서 측정을 해본 결과 최대 5배~10배의 performance 향상을 볼 수 있었습니다.\n역할 및 구현 :\n\t- CNN Model의 parameter 분포 data 크기 조사\n\t- Model Parallelism을 위한 layer 구조 설계\n\t- Tensorflow 내부 동작 분석",
+        "images": [
+          "images/portfolio/distributed-training/distributed-cnn-training-1.jpg"
+        ],
+        "url" : "https://drive.google.com/file/d/1KjJ3UX-HL1h-xynqZ1lDTPUj7C6KUZ4t/view?usp=drive_link",
+        "technologies": [
+          {
+            "class": "devicon-cplusplus-plain",
+            "name": "C++"
+          },
+          {
+            "class": "devicon-linux-plain",
+            "name": "Linux"
+          },
+          {
+            "class": "devicon-tensorflow-original",
+            "name": "Tensorflow"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Samsung Electronics",
+        "title": "Platform Engineer / Software Engineer",
+        "years": "03.2021 - present",
+        "mainTech": [
+          "Python",
+          "Bash",
+          "Linux"
+        ],
+        "technologies": [
+          "Go",
+          "AWS",
+          "Kubernetes",
+          "C",
+          "Docker",
+          "OCP",
+          "Virtual Machine"
+        ]
+      },
+      {
+        "company": "Tmax Cloud",
+        "title": "Platform Engineer",
+        "years": "03.2020 - 02.2021",
+        "mainTech": [
+          "Go"
+        ],
+        "technologies": [
+          "Tekton",
+          "Docker",
+          "Kubernetes",
+          "Linux"
+        ]
+      },
+      {
+        "company": "Tmax OS",
+        "title":  "Software Engineer",
+        "years": "01.2019 - 02.2020",
+        "mainTech": [
+          "C++"
+        ],
+        "technologies": [
+          "Linux",
+          "Bash",
+          "Java", 
+          "Python"
+        ]
+      },
+      {
+        "company": "MLSL(Machine Learning System Lab)",
+        "title":  "Researcher",
+        "years": "08.2016 - 01.2019",
+        "mainTech": [
+          "C++"
+        ],
+        "technologies": [
+          "Tensorflow",
+          "Cuda",
+          "Python"
+        ]
+      }
+    ]
+  }

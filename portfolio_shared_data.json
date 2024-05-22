@@ -1,0 +1,101 @@
+{
+    "basic_info": {
+      "name": "Jinwon Lee",
+      "titles": [ "Software Engineer", "Platform Engineer", "DevOps Engineer", "Infra Engineer" ],
+      "social": [
+        {
+          "name": "github",
+          "url": "https://github.com/JINwonLEE",
+          "class": "fab fa-github"
+        },
+        {
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/jwl1993",
+          "class": "fab fa-linkedin"
+        }
+      ],
+      "image": "myProfile.jpg"
+    },
+    "publications": {
+      "posters": [
+      {
+        "name" : "Alleviating the Network Bottleneck for CNN Distributed Training through Automatic Resource-Aware Layer Placement",
+        "place": "USENIX NSDI 2019",
+        "authors" : ["Jay H. Park", "Sunghwan Kim", "Jinwon Lee", "Myeongjae Jeon", "Sam H. Noh"],
+        "url" : "https://drive.google.com/file/d/1JPetstmRtR31hUorgftFTyC4T8B8q7ri/view?usp=drive_link"
+      },
+      {
+        "name" : "Improving Performance of Distributed TensorFlow using CNN Characteristics Exploiting Model Parallelism",
+        "place" : "ACM EuroSys 2018",
+        "authors" : ["Jay H. Park", "Jinwon Lee", "Sam H. Noh"],
+        "url" : "https://drive.google.com/file/d/1KjJ3UX-HL1h-xynqZ1lDTPUj7C6KUZ4t/view?usp=drive_link"
+      }
+      ],
+      "thesis" : [
+      {
+        "name" : "Convergence Aware CNN Training",
+        "degree" : "UNIST, MS degree, 2019.",
+        "url" : "https://unist.dcollection.net/srch/srchDetail/200000178272"
+      }
+      ]
+    },
+    "skills": {
+      "icons": [
+        {
+          "name": "Python",
+          "class": "devicon-python-plain",
+          "level": "80"
+        },
+        {
+          "name": "Go",
+          "class": "devicon-go-plain",
+          "level": "70"
+        },
+        {
+          "name": "C++",
+          "class": "devicon-cplusplus-plain",
+          "level": "85"
+        },
+        {
+          "name": "C",
+          "class": "devicon-c-plain",
+          "level": "90"
+        },
+        {
+          "name": "Kubernetes",
+          "class": "devicon-kubernetes-plain",
+          "level": "90"
+        },
+        {
+          "name": "AWS",
+          "class": "devicon-amazonwebservices-plain-wordmark",
+          "level": "75"
+        },
+        {
+          "name": "Git",
+          "class": "devicon-git-plain",
+          "level": "85"
+        },
+        {
+          "name": "Github",
+          "class": "devicon-github-plain",
+          "level": "85"
+        },
+        {
+          "name": "Linux",
+          "class": "devicon-linux-plain",
+          "level": "85"
+        },
+        {
+          "name": "Bash",
+          "class": "devicon-bash-plain",
+          "level": "85"
+        },
+        {
+          "name": "Tensorflow",
+          "class": "devicon-tensorflow-original",
+          "level": "80"
+        }
+      ]
+    }
+  }

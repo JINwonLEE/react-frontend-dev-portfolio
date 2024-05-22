@@ -1,0 +1,293 @@
+{
+    "basic_info": {
+      "description_header": "Hello",
+      "description": "👋 I'm Jinwon Lee, a developer who wants to make everything a little more convenient and easy. Currently, I am working as a platform and infrastructure developer, especially related to cloud platforms such as Kubernetes. I'm not only interested in platforms, but also interested in various languages such as Go, Python, C++ and etc. So there are many languages I have experience with. I hope to create system based on this experience so that people can work more comfortably with the system I created.",
+      "section_name": {
+        "about": "About me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience"
+      }
+    },
+    "projects": [
+      {
+        "title": "MLOps",
+        "startDate": "2024",
+        "description" : "I built mlops for the AI model based on the network-related data collection and processing system (VISTA). Training was automatically retrained according to a specific threshold. Also training can be performed with specific data which was queried by user and finally deploying process was performed automatically(CD). In addition, we deployed the MLOps system on various cloud platforms and built a more efficient system by utilizing the services provided by the environment (ex. AWS).",
+        "images": [
+          "images/portfolio/mlops/mlops-1.jpg",
+          "images/portfolio/mlops/mlops-2.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-python-plain",
+            "name": "Python"
+          },
+          {
+            "class": "devicon-kubernetes-plain",
+            "name": "Kubernetes"
+          },
+          {
+            "class": "devicon-amazonwebservices-plain-wordmark",
+            "name": "AWS"
+          },
+          {
+            "class": "devicon-git-plain",
+            "name": "Git"
+          }
+        ]
+      },
+      {
+        "title": "Data Mirroring",
+        "startDate": "2022",
+        "description": "When a specific type(ex. Network) of packet comes in, we implemented a module that copies the data and sends the packet to a specific target server. We referred to an open source and performed tuning and implementation to suit our environment and operating conditions. The Data Mirroring module mirrors up to 140,000 packets per second in real time and uses limited resources as efficiently as possible. The module is currently deployed and operational in certain regions.",
+        "images": [
+          "images/portfolio/mirroring/mirroring-1.jpg"
+        ],
+        "url": "https://github.com/session-replay-tools/tcpcopy",
+        "technologies": [
+          {
+            "class": "devicon-c-plain",
+            "name": "C"
+          },
+          {
+            "class": "devicon-linux-plain",
+            "name": "Linux"
+          }
+        ]
+      },
+      {
+        "title": "Cloud Native VISTA",
+        "startDate": "2023",
+        "description": "VISTA (network-related data preprocessing and query system), an company product, was deployed and operated in VM form. Porting work was carried out to enable this product to operate on various cloud platforms. While carrying out this work, we used various cloud open source modules and were able to create cloud native VISTA. A representative open source used is K-Native. In addition, VISTA was designed to be more efficient by taking advantage of the characteristics of various cloud platforms (ex. k8s, aws).",
+        "images": [
+          "images/portfolio/cloud-native-vista/cloud-native-vista-1.jpg",
+          "images/portfolio/cloud-native-vista/cloud-native-vista-2.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-kubernetes-plain",
+            "name": "Kubernetes"
+          },
+          {
+            "class": "devicon-amazonwebservices-plain-wordmark",
+            "name": "AWS"
+          },
+          {
+            "class": "devicon-python-plain",
+            "name": "Python"
+          }
+        ]
+      },
+      {
+        "title": "One Click Kubernetes Creation",
+        "startDate": "2023",
+        "description": "When developing an application to be deployed in a cloud environment, developer often wish deveoloper had my own cloud environment. When developing while sharing an environment, various problematic situations arise. To avoid this situation, we wanted to provide each developer with their own cloud cluster. To provide this environment, we created a template that allows you to easily create a Kubernetes cluster. Currently, if there is only one IP for cluster configuration (IP for connection), the minimum number of control planes and data planes are configured, and the environment is configured using cni (calico) and storage (ceph). In the future, we plan to proceed with one-click cloud platform creation by adding various options such as specific version, cni, storage, and platform type.",
+        "images": [
+          "images/portfolio/one-click/one-click-1.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-kubernetes-plain",
+            "name": "Kubernetes"
+          },
+          {
+            "class": "devicon-linux-plain",
+            "name": "Linux"
+          },
+          {
+            "class": "devicon-bash-plain",
+            "name": "Bash"
+          }
+        ]
+      },
+      {
+        "title": "Vista Operator",
+        "startDate": "2023",
+        "description": "Until now, VISTA was deployed to the cloud platform through helm. However, there were limitations to managing cloud products with helm. Helm was insufficient to appropriately respond to various situations such as dependencies between modules, module life cycle, and resource management, so we decided to create our own Custom Resource and implement an Operator appropriate for it. When deploying VISTA, we considered the dependencies of each module and operated the sub-modules in the direction intended at the platform layer according to situations that may occur during operation.",
+        "images": [
+          "images/portfolio/vista-operator/vista-operator-1.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-kubernetes-plain",
+            "name": "Kubernetes"
+          },
+          {
+            "class": "devicon-go-plain",
+            "name": "Go"
+          }
+        ]
+      },
+      {
+        "title": "CI/CD",
+        "startDate": "2022",
+        "description": "To automate image build (CI) and distribution (CD) on the platform built in-house, we used a bash script to automate it. Using virt-sysprep, package installation and environment configuration were included in the image, and the module template was configured and automatically distributed through VNFD (Virtualize Network Function Descriptor). Although there is a fairly complex configuration in VNFD, it has been templated for automation.",
+        "images": [
+          "images/portfolio/cicd/cicd-1.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-bash-plain",
+            "name": "Bash"
+          },
+          {
+            "class": "devicon-python-plain",
+            "name": "Python"
+          },
+          {
+            "class": "devicon-linux-plain",
+            "name": "Linux"
+          }
+        ]
+      },
+      {
+        "title": "VNFD validator, generator",
+        "startDate": "2021",
+        "description": "VNFD stands for Virtualize Network Function Descriptor and is a descriptor required to deploy VNF. A lot of information must be included in the descriptor. It's really difficult to fill in all the required fields with the right kind of values. Human errors occurred quite often, so a tool was needed to verify the descriptor. So, we implemented a validation tool for each field. We went beyond the validation tool and implemented a generation tool for greater user convenience. Based on this, we were able to provide a more user-friendly descriptor.",
+        "images": [
+          "images/portfolio/vnfd/vnfd-1.jpg",
+          "images/portfolio/vnfd/vnfd-2.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-python-plain",
+            "name": "Python"
+          },
+          {
+            "class": "devicon-bash-plain",
+            "name": "Bash"
+          }
+        ]
+      },
+      {
+        "title": "Image Registry Operator",
+        "startDate": "2020",
+        "description": "In order to build a clouded image registry in the Kubernetes environment, we defined a Custom Resource and implemented an operator appropriate for it. By storing the image in Kubernetes' storage through a crd called image, we were able to further utilize the characteristics of Kubernetes. For example, by delegating the storage of image resources to PVC in Kubernetes, the storage management of the application layer can be layered down to the platform layer. This saves you the trouble of having to build an existing image registry (ex. nexus, harbor, etc.) separately.",
+        "images": [
+          "images/portfolio/registry-operator/registry-operator-1.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-kubernetes-plain",
+            "name": "Kubernetes"
+          },
+          {
+            "class": "devicon-go-plain",
+            "name": "Go"
+          }
+        ]
+      },
+      {
+        "title": "AI Assistant",
+        "startDate": "2019",
+        "description": "In MacOS, there is an AI assistant called Siri. Siri executes various OS functions on your behalf and recognizes various voice commands. I wish this assistant existed in TmaxOS as well. So we developed an AI assistant for TmaxOS. It accepts the user's command through voice recognition, determines what command the voice means through NLP processing, then executes the command and delivers the execution result to the user through voice synthesis. We contributed to the design of AI assistant's UI as well as AI assistant's data model and structure.",
+        "images": [
+          "images/portfolio/ai-assistant/ai-assistant-1.jpg"
+        ],
+        "url": "https://github.com",
+        "technologies": [
+          {
+            "class": "devicon-cplusplus-plain",
+            "name": "C++"
+          },
+          {
+            "class": "devicon-linux-plain",
+            "name": "Linux"
+          }
+        ]
+      },
+      {
+        "title": "Convergence Aware CNN Training",
+        "startDate": "2018",
+        "description": "Back-propagation takes up a significant portion of CNN training. In this situation, we thought about how to reduce the amount of computation to improve resource efficiency and performance. The most important thing in CNN training was how well the weights were optimized. The trend of each weight is compared, and when it is determined that the weight no longer needs training, it is judged to have converged and training for that weight is not performed. By increasing the converged weights, we optimized the model and reduced computation depending on the situation.",
+        "images": [
+          "images/portfolio/cnn/cnn-1.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-cplusplus-plain",
+            "name": "C++"
+          },
+          {
+            "class": "devicon-linux-plain",
+            "name": "Linux"
+          },
+          {
+            "class": "devicon-tensorflow-original",
+            "name": "Tensorflow"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Samsung Electronics",
+        "title": "Platform Engineer / Software Engineer",
+        "years": "03.2021 - present",
+        "mainTech": [
+          "Python",
+          "Bash",
+          "Linux"
+        ],
+        "technologies": [
+          "Go",
+          "AWS",
+          "Kubernetes",
+          "C",
+          "Docker",
+          "OCP",
+          "Virtual Machine"
+        ]
+      },
+      {
+        "company": "Tmax Cloud",
+        "title": "Platform Engineer",
+        "years": "03.2020 - 02.2021",
+        "mainTech": [
+          "Go"
+        ],
+        "technologies": [
+          "Tekton",
+          "Docker",
+          "Kubernetes",
+          "Linux"
+        ]
+      },
+      {
+        "company": "Tmax OS",
+        "title":  "Software Engineer",
+        "years": "01.2019 - 02.2020",
+        "mainTech": [
+          "C++"
+        ],
+        "technologies": [
+          "Linux",
+          "Bash",
+          "Java", 
+          "Python"
+        ]
+      },
+      {
+        "company": "MLSL(Machine Learning System Lab)",
+        "title":  "Researcher",
+        "years": "08.2016 - 01.2019",
+        "mainTech": [
+          "C++"
+        ],
+        "technologies": [
+          "Tensorflow",
+          "Cuda",
+          "Python"
+        ]
+      }
+    ]
+  }
