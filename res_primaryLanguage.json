@@ -14,7 +14,7 @@
       {
         "title": "One Click Kubernetes Creation",
         "startDate": "2023",
-        "description": "요약 : 사내 Platform(OpenStack 기반의 VM orchestration platform) 위에서 정해진 template에 필요한 값 (ex. Ip address, CIDR)을 받아서 kubernetes cluster가 구성되는 tool을 만들었습니다.\n결과 : 별도의 추가 구성 없이 일부 필요한 값만 받아서 kubernetes cluster을 구성하였습니다. (Storage: Cephfs, CNI: calico)\n역할 및 구현 :\n\t- Kubernetes data plane, control plane image 구성\n\t- Kubernetes CNI, Storage 설정 (Linux)",
+        "description": "요약 : 사내 Platform(OpenStack 기반의 VM orchestration platform) 위에서 정해진 template에 필요한 값 (ex. Ip address, CIDR)을 받아서 kubernetes cluster가 구성되는 tool을 만들었습니다.\n각 노드는 VM 형태로 배포가 되고 각 VM의 이미지는 virt-sysprep을 이용해서 이미지의 build할 때와 이미지 구동 시에 실행되어야 하는 과정들을 구현하였습니다.\nKubernetes cluster을 구성할 때 필요한 네트워크 구성과 각 element들의 배포를 자동화하였으며 storage 구성까지 완료하였습니다.\n결과 : 별도의 추가 구성 없이 일부 필요한 값만 받아서 kubernetes cluster을 구성하였습니다. (Storage: Cephfs, CNI: calico)\n역할 및 구현 :\n\t- Kubernetes data plane, control plane image 구성\n\t- Kubernetes CNI, Storage 설정 (Linux)",
         "images": [
           "images/portfolio/one-click/one-click-1.jpg"
         ],
@@ -37,7 +37,7 @@
       {
         "title": "Vista Operator",
         "startDate": "2023",
-        "description": "요약 : Kubernetes에서 helm을 통해서 배포되었던 제품(VISTA)을 VISTA라는 CRD와 해당 CRD을 지켜보는 operator을 통해서 배포 및 운영하였습니다.\n결과 : 복잡한 helm으로 배포하는 것보다 훨씬 더 간단하게 VISTA을 배포할 수 있었습니다. 또한 좀 더 application을 저희가 원하는대로 배포 및 관리할 수 있었습니다. (ex. module의 dependency, life-cycle, recover and etc)\n역할 및 구현 :\n\t- VISTA CRD 설계 (Golang)\n\t- VISTA Operator 구조 설계 (Golang)\n\t- VISTA Operator 구현 (Golang, Operator SDK)",
+        "description": "요약 : Kubernetes에서 helm을 통해서 배포되었던 제품(VISTA)을 VISTA라는 CRD와 해당 CRD을 지켜보는 operator을 통해서 배포 및 운영하였습니다.\nOperator는 operator-sdk framework을 사용해 개발을 진행했고 배포와 각 pod의 life-cycle을 고려하여 CRD의 스펙을 결정하였습니다.\n결과 : 복잡한 helm으로 배포하는 것보다 훨씬 더 간단하게 VISTA을 배포할 수 있었습니다. 또한 좀 더 application을 저희가 원하는대로 배포 및 관리할 수 있었습니다. (ex. module의 dependency, life-cycle, recover and etc)\n역할 및 구현 :\n\t- VISTA CRD 설계 (Golang)\n\t- VISTA Operator 구조 설계 (Golang)\n\t- VISTA Operator 구현 (Golang, Operator SDK)",
         "images": [
           "images/portfolio/vista-operator/vista-operator-1.jpg"
         ],
@@ -180,9 +180,24 @@
     ],
     "experience": [
       {
+        "company": "Samsung Research",
+        "title": "AI/ML(LLM) Engineer",
+        "years": "07.2024 - present",
+        "mainTech": [
+          "Python",
+          "Pytorch",
+          "Linux"
+        ],
+        "technologies": [
+          "LLM",
+          "Machine Translation"
+        ]
+      },
+
+      {
         "company": "Samsung Electronics",
         "title": "Platform Engineer / Software Engineer",
-        "years": "03.2021 - present",
+        "years": "03.2021 - 06.2024",
         "mainTech": [
           "Python",
           "Bash",

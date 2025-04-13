@@ -22,13 +22,21 @@
         "name" : "Alleviating the Network Bottleneck for CNN Distributed Training through Automatic Resource-Aware Layer Placement",
         "place": "USENIX NSDI 2019",
         "authors" : ["Jay H. Park", "Sunghwan Kim", "Jinwon Lee", "Myeongjae Jeon", "Sam H. Noh"],
-        "url" : "https://drive.google.com/file/d/1JPetstmRtR31hUorgftFTyC4T8B8q7ri/view?usp=drive_link"
+        "url" : "https://drive.google.com/file/d/1JPetstmRtR31hUorgftFTyC4T8B8q7ri/view?usp=sharing"
       },
       {
         "name" : "Improving Performance of Distributed TensorFlow using CNN Characteristics Exploiting Model Parallelism",
         "place" : "ACM EuroSys 2018",
         "authors" : ["Jay H. Park", "Jinwon Lee", "Sam H. Noh"],
-        "url" : "https://drive.google.com/file/d/1KjJ3UX-HL1h-xynqZ1lDTPUj7C6KUZ4t/view?usp=drive_link"
+        "url" : "https://drive.google.com/file/d/1KjJ3UX-HL1h-xynqZ1lDTPUj7C6KUZ4t/view?usp=sharing"
+      }
+      ],
+      "preprints": [
+      {
+        "name" : "Accelerated Training for CNN Distributed Deep Learning through Automatic Resource-Aware Layer Placement",
+        "place" : "arXiv 2019",
+        "authors" : ["Jay H. Park", "Sunghwan Kim", "Jinwon Lee", "Myeongjae Jeon", "Sam H. Noh"],
+        "url" : "https://arxiv.org/pdf/1901.05803"
       }
       ],
       "thesis" : [
@@ -44,7 +52,7 @@
         {
           "name": "Python",
           "class": "devicon-python-plain",
-          "level": "80"
+          "level": "90"
         },
         {
           "name": "Go",
@@ -54,27 +62,17 @@
         {
           "name": "C++",
           "class": "devicon-cplusplus-plain",
-          "level": "85"
-        },
-        {
-          "name": "C",
-          "class": "devicon-c-plain",
           "level": "90"
         },
         {
           "name": "Kubernetes",
           "class": "devicon-kubernetes-plain",
-          "level": "90"
+          "level": "95"
         },
         {
           "name": "AWS",
           "class": "devicon-amazonwebservices-plain-wordmark",
-          "level": "75"
-        },
-        {
-          "name": "Git",
-          "class": "devicon-git-plain",
-          "level": "85"
+          "level": "70"
         },
         {
           "name": "Github",
@@ -87,14 +85,9 @@
           "level": "85"
         },
         {
-          "name": "Bash",
-          "class": "devicon-bash-plain",
-          "level": "85"
-        },
-        {
           "name": "Tensorflow",
           "class": "devicon-tensorflow-original",
-          "level": "80"
+          "level": "70"
         }
       ]
     }
